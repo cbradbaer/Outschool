@@ -1,0 +1,6 @@
+Day 7 - MVVM
+1. Intro to MVVM
+2. MVVM design
+3. List View
+4. NuGET – PromptAsync
+5. ASSIGNMENT – Collection App Level 1
