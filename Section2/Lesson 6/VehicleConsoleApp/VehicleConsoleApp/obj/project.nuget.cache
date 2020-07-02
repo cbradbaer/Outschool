@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CMGDKUQ//P4meCBm+G9ngU5SCIZXBd+z5eo4TfLeyznvi74TP/08txe48YEK6r5YHgcZU6w7HfEhyWnuE4YTRw==",
+  "success": true,
+  "projectFilePath": "D:\\My Documents\\Courses\\OutSchool\\Section 2\\Lesson 6\\VehicleConsoleApp\\VehicleConsoleApp\\VehicleConsoleApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cbbae\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
