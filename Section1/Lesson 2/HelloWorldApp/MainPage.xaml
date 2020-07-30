@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="Beige"
+             x:Class="HelloWorldApp.MainPage">
+
+
+    
+    
+    <StackLayout Orientation="Vertical" >
+        <!-- Place new controls here -->
+        <Label 
+            x:Name="labelHello"
+            Text="Hello World!" 
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"/>
+
+        <StackLayout  Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="Name:  "
+                   HorizontalOptions="Center"/>
+
+            <Entry
+                x:Name="entryName"
+                HorizontalOptions="Center"
+                WidthRequest="300"
+                HeightRequest="50"/>
+        </StackLayout>
+
+
+        <Button
+            x:Name="btnOK"
+            Text="OK"
+            HorizontalOptions="Center"
+            Clicked="btnOK_Clicked"
+            />
+
+
+
+    </StackLayout>
+    
+    
+    
+    
+
+</ContentPage>
+    
+    
+ 
