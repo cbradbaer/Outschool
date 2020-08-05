@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="StackLayoutApp.MainPage">
+
+    <StackLayout>
+
+        <BoxView BackgroundColor="Blue" HeightRequest="1" />
+        <StackLayout  Orientation="Vertical"  HeightRequest="200">
+            <Label Text="One" BackgroundColor="Blue"  HorizontalOptions="Start"/>
+            <BoxView BackgroundColor="Red" HeightRequest="1" />
+            <Label Text="Two" BackgroundColor="Red" HorizontalOptions="Center"/>
+            <BoxView BackgroundColor="Red" HeightRequest="1" />            
+            <Label Text="Three" BackgroundColor="Yellow" HorizontalOptions="End"/>
+            <BoxView BackgroundColor="Red" HeightRequest="1" />            
+        </StackLayout>
+        
+        <BoxView BackgroundColor="Blue" HeightRequest="1" />
+        <StackLayout  Orientation="Vertical"  HeightRequest="200">
+            <Label Text="One" BackgroundColor="Blue"  HorizontalOptions="Start" VerticalOptions="StartAndExpand"  />
+            <BoxView BackgroundColor="Red" HeightRequest="1" />
+            <Label Text="Two" BackgroundColor="Red" HorizontalOptions="Center" VerticalOptions="StartAndExpand"/>
+            <BoxView BackgroundColor="Red" HeightRequest="1" />
+            <Label Text="Three" BackgroundColor="Yellow" HorizontalOptions="End" VerticalOptions="StartAndExpand"/>
+            <BoxView BackgroundColor="Red" HeightRequest="1" />
+        </StackLayout>
+
+        <BoxView BackgroundColor="Blue" HeightRequest="1" />
+        <StackLayout  Orientation="Vertical"  HeightRequest="200">
+            <Label Text="One" BackgroundColor="Blue"  HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+            <BoxView BackgroundColor="Red" HeightRequest="1" />
+            <Label Text="Two" BackgroundColor="Red" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+            <BoxView BackgroundColor="Red" HeightRequest="1" />
+            <Label Text="Three" BackgroundColor="Yellow" HorizontalOptions="End" VerticalOptions="CenterAndExpand"/>
+            <BoxView BackgroundColor="Red" HeightRequest="1" />
+        </StackLayout>
+        
+        <BoxView BackgroundColor="Blue" HeightRequest="1" />
+        <StackLayout  Orientation="Vertical"  HeightRequest="200">
+            <Label Text="One" BackgroundColor="Blue"  HorizontalOptions="Start" VerticalOptions="FillAndExpand"  />
+            <BoxView BackgroundColor="Red" HeightRequest="1" />
+            <Label Text="Two" BackgroundColor="Red" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+            <BoxView BackgroundColor="Red" HeightRequest="1" />
+            <Label Text="Three" BackgroundColor="Yellow" HorizontalOptions="End" VerticalOptions="FillAndExpand"/>
+            <BoxView BackgroundColor="Red" HeightRequest="1" />
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
