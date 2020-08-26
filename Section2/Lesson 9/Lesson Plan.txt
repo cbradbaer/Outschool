@@ -1,4 +1,0 @@
-
-Day 9 -  Adding a Database
-1. Database design
-2. ASSIGNMENT – Collection App Level 3

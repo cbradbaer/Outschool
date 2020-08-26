@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="Crimson"
+             x:Class="VinylVault.View.HomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding CollectionName}"
+                HorizontalOptions="Center" 
+                FontSize="Medium"
+                TextColor="White"
+                Margin="10"/>
+
+            <SearchBar
+                x:Name="srchBar"
+                Margin="10"
+                Placeholder="Search Album Name..."
+                HeightRequest="40"
+                WidthRequest="250"
+                HorizontalOptions="CenterAndExpand"
+                TextChanged="srchBar_TextChanged"/>
+
+
+            <ListView x:Name="listView" BackgroundColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" ItemSelected="listView_ItemSelected"  >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem IsDestructive="True" Text="Delete" Clicked="MenuItem_Clicked"  CommandParameter="{Binding .}" />
+                            </ViewCell.ContextActions>
+                            <ContentView>
+
+                                <Grid ColumnDefinitions="100, *, 75"  BackgroundColor="White">
+                                    <StackLayout Grid.Column="0"  VerticalOptions="Center">
+                                        <Image  Source="{Binding ThumbImage}" WidthRequest="100" Aspect="AspectFit" HorizontalOptions="Start"/>
+                                    </StackLayout>
+                                    
+                                    <StackLayout Grid.Column="1"  VerticalOptions="Center">
+                                        <Label Text="{Binding Title}"  FontSize="Large" TextColor="Black" HorizontalOptions="Center"/>
+                                        <Label Text="{Binding Artist}"  FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                    
+                                    <StackLayout Grid.Column="2"  VerticalOptions="Center">
+                                        <Label Text="{Binding Location}" FontSize="Small" TextColor="Black" HorizontalOptions="Center"/>
+                                    </StackLayout>
+
+                                </Grid>   
+                                
+                            </ContentView>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="10">
+
+            <Button Text="+" 
+                    Clicked="Button_Clicked_1"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    BorderRadius="25"
+                    BorderColor="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    FontAttributes="Bold"
+                    />
+
+                <Button Text="N" 
+                    Clicked="Button_Clicked" 
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    BorderRadius="25"
+                    BorderColor="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    FontAttributes="Bold"
+                    />
+
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
