@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VinylVault.View.DetailPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Enter Album Information"
+                           TextColor="Black"
+                           FontSize="24"
+                           VerticalOptions="Center"
+                           HorizontalOptions="CenterAndExpand"/>
+
+
+            <Frame BackgroundColor="Transparent" Margin="10" CornerRadius="10" HasShadow="True">
+                <ScrollView>
+                    <StackLayout>
+
+                        <Image BindingContext="{x:Reference entryThumbImage}" Source="{Binding Path=Text}" />
+
+                        <Entry x:Name="entryTitle"
+                               Text="{Binding Title}"
+                               Placeholder="Title"
+                               PlaceholderColor="Gray"
+                               BackgroundColor="White"/>
+
+                        <Entry x:Name="entryArtist"
+                               Text="{Binding Artist}"
+                               Placeholder="Artist"
+                               PlaceholderColor="Gray"
+                               BackgroundColor="White"/>
+
+                        <Entry x:Name="entryGenre"
+                               Text="{Binding Genre}"
+                               Placeholder="Genre"
+                               PlaceholderColor="Gray"
+                               BackgroundColor="White"/>
+
+                        <Entry x:Name="entryThumbImage"
+                               Text="{Binding ThumbImage}"
+                               Placeholder="Image File or URL"
+                               PlaceholderColor="Gray"
+                               BackgroundColor="White"/>
+
+                        <Entry x:Name="entryLocation"
+                               Text="{Binding Location}"
+                               Placeholder="Location"
+                               PlaceholderColor="Gray"
+                               BackgroundColor="White"/>
+
+                    </StackLayout>
+
+
+                </ScrollView>
+            </Frame>
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" Margin="10">
+                <Button x:Name="btnCancel"
+                                Text="Cancel"
+                                HeightRequest="40"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="Center"
+                                BackgroundColor="White"
+                                FontSize="14"
+                                BorderRadius="10"
+                                Clicked="btnCancel_Clicked"
+                                />
+                <Button x:Name="btnOK"
+                                Text="OK"
+                                HeightRequest="40"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="Center"
+                                BackgroundColor="White"
+                                FontSize="14"
+                                BorderRadius="10"
+                                Clicked="btnOK_Clicked"
+                                />
+
+
+            </StackLayout>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
