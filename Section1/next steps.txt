@@ -13,6 +13,8 @@ Xamarin Podcast
 https://www.xamarinpodcast.com/
 Xamarin Blog
 https://www.planetxamarin.com/preview
+Microsoft Learn
+https://docs.microsoft.com/en-us/learn/paths/build-mobile-apps-with-xamarin-forms/
 
 
 
