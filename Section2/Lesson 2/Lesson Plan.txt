@@ -1,9 +1,0 @@
-
-Day 2 – Visual Studio
-1. Intro to Visual Studio
-	Environment Overview
-	Solutions and Projects
-	Debugging Techniques
-	Intellisense
-2.  ASSIGNMENT: Hello World Program
-

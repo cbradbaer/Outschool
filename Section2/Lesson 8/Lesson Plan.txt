@@ -1,5 +1,0 @@
-
-Day 8 - Multi-Page Application
-1. Navigation
-2. Data Persistence
-3. ASSIGNMENT – Collection App Level 2

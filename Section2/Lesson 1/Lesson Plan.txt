@@ -1,8 +1,0 @@
-Day 1 – Class Introduction and Setup
-1. Class Introductions
-2. Zoom Overview
-3. Class Structure
-2. Visual Studio Installation
-3. Intro to Xamarin Forms
-	Xamarin Forms Overview
-	XAML (Extensive Application Markup Language) Basics

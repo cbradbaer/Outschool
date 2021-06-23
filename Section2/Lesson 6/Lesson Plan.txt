@@ -1,9 +1,0 @@
-
-Day 6 – Object Oriented Programming
-1. Intro to OOP
-	Encapsulation
-	Inheritance
-	Class
-	Object
-2. Constructors
-3. ASSIGNMENT – Console App
