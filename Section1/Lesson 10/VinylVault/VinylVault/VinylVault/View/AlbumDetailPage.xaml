@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VinylVault.View.AlbumDetailPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Enter Album Information" 
+                   FontSize="24" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <Image  WidthRequest="300" HeightRequest="300" Aspect="AspectFit" BindingContext="{x:Reference entryImage}" Source="{Binding Path=Text}"/>
+
+            <Entry Text="{Binding Title}"
+                   Placeholder="Title"
+                   PlaceholderColor="Gray"
+                   BackgroundColor="White"/>
+            <Entry Text="{Binding Artist}"
+                   Placeholder="Artist"
+                   PlaceholderColor="Gray"
+                   BackgroundColor="White"/>
+            <Entry Text="{Binding Genre}"
+                   Placeholder="Genre"
+                   PlaceholderColor="Gray"
+                   BackgroundColor="White"/>
+            <Entry x:Name="entryImage" 
+                    Text="{Binding FrontImage}"
+                   Placeholder="Front Image"
+                   PlaceholderColor="Gray"
+                   BackgroundColor="White"/>
+            <Entry Text="{Binding Location}"
+                   Placeholder="Location"
+                   PlaceholderColor="Gray"
+                   BackgroundColor="White"/>
+
+            <StackLayout Orientation="Horizontal" Padding="20, 0, 20, 0" BackgroundColor="Transparent">
+                <Button x:Name="btnCancel"
+                            Text="Cancel"
+                            HeightRequest="40"
+                            WidthRequest="10"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="Center"
+                            BackgroundColor="Blue"
+                            TextColor="White"
+                            FontSize="14"
+                            Clicked="btnCancel_Clicked"/>
+
+                <Button x:Name="btnOK"
+                            Text="OK"
+                            HeightRequest="40"
+                            WidthRequest="10"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="Center"
+                            TextColor="White"
+                            BackgroundColor="Blue"
+                            FontSize="14"
+                            Clicked="btnOK_Clicked"/>
+
+            </StackLayout>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
